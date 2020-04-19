@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--using the link tag, the website will inherit all the css code for the bootstrap css file-->
+    <link href="Bootstrap_4.3.1/js/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+<div class="container">
+<!--This is a div that contains that navigation code The class container is used to group together all the content that is shown on a page-->
+<!-- Used getbootstrap.com as a reference-->
+<div class="container">
+  
+  <!-- The class nav is used to establish to the computer that we are creating a navigation bar. This will let the computer know that all the child content inside the <nav></nav> tags are part of the navigation bar-->
+  
+  <!--The nav pills class is used to create tabs for the navigation that are stylized to appear as if they are boxes that are lined up next to each other, rather than the traditional tabs that may be seen on other websites-->
+
+  <!--the class nav-fill is used to horizontally fill up the width of the container. However, the different content inside the navgation bar is all not the same width as each other. Instead, we see the Home portion of the content having a smaller width than the About Me page -->
+   <nav class="nav nav-pills nav-fill">
+     <!--The class nav-item establishes each anchor tag will be a separate tab or pill on the navigation bar-->
+
+     <!--the nav-link class establishes that each tab on the navigational bar will be a link that will redirect the user to another internal page. This paired with  the anchor tag will allow the users to access the different pages of the website-->
+
+     <!--the active class illustartes which tab/webpage the user is currently. It just highlights the tab with a blue color to indcate that-->
+     <a class=" nav-item nav-link active" href = "index.html">Home</a>
+     <a class="nav-link nav-item" href = "Kadam_AboutMe.html">About me</a>
+     <a class="nav-link nav-item" href = "Kadam_Projects.html">Projects</a>
+     <a class="nav-link nav-item" href = "Kadam_Resume.html">Resume</a>
+     <a class="nav-link nav-item" href = "Kadam_ContactMe.html">Contact Me</a>
+    </nav>
+ </div>
+
+
+ <!--This is the div that includes the header jumbotron code. The class would be jumbotron to make sure that it followed the layout of a jumbotron which will span from the width of the page.-->
+ <div class="jumbotron">
+   <!--The h1 tag is used to display a heading for the page-->
+   <h1 class ="color">Pradnya's Engineering Portfolio</h1>
+   <p class ="color">"If you do what you love, you will never work a day in your life" ~ Marc Anthony. Throughout school, the sciences have always fascinated me, so to continue with my passions in the future I would like to incorporate research sciences into my career.</p>
+   <!-- an anchor tag is used, so that the website will redirect the user to the About Me page if they click the "Continue Reading" link-->
+   <a href="Kadam_AboutMe.html">Continue Reading...</a>
+ </div>
+
+<!--two different divs are used in this code to spearate the elements of the main content of the home page The first div tag uses the class container to group all the child content together.-->
+<div class="container">
+  
+  <!--this div is a child of the first div, however this div has a class row which indicates that all the child elements inside this div will be in the same row-->
+  <div class="row">
+    <!--the class col-md-6 refers to the bootstrap grid which will take up 6 out of the 12 columns on the grid, the md refers to the height of the cell-->
+
+    <!--the class card establishes that the content will be formatted using the stylistic elements of a card in bootstrap (there will be a premade border, etc.)-->
+
+    <!--the card-body class establishes that the child elements inside the div will be inside the card, making up the body of the card (similar to the body of the webpage)-->
+
+    <!--the class flex-md-row helps establish a layout/align the content by using directional commands-->
+   <div class="col-md-6 card card-body flex-md-row">
+     <!--the class col-md-6 is used once again to divide the card into two section: one for the text and the other for the image-->
+     <div class="col-md-6">
+       <!--the strong tag is used to bold the text-->
+      <strong> <p>Work Experience</p> </strong>
+      <h3>Ace Academy Art Instructor</h3>
+      <h4>Summer 2019</h4>
+      <p>As an Ace Academy Art Instructor, I focused on helping students develop their own creative style of art through studying different aspects of the artistic world.</p>
+      <!-- an anchor tag is used, so that the website will redirect the user to the Resume page if they click the "Continue Reading" link-->
+      <a href="Kadam_Resume.html" class="cul">Continue Reading...</a>
+     </div>
+  
+       <!-- The class card-image-right will also help to make the image stay on the right side of the cell-->
+       
+       <img src="Images/acelogo.png" alt="Picture of Me" class="card-image-right flex-md-row col-md-5" width="50" height="200">
+    </div> 
+   
+<!--Using a card will create a format that will automatically make a border-->
+   <div class="col-md-6 card card-body flex-md-row">
+     <div class="col-md-6">
+     <strong> <p>Projects</p> </strong>
+      <h3>Scratch Project</h3>
+      <h4>CSP</h4>
+      <p>This game consists of players using the arrow keys to naviagate a truck </p>
+      <a href="Kadam_Projects.html" class="cul">Continue Reading...</a>
+     </div>
+    
+      <img src="Images/scratch.png" alt="Picture of Me" class="card-image-right flex-md-row col-md-5" width="200px" height="250px">
+     
+   </div>
+  </div>
+</div>
+
+<!--Using a container will make sure that the content on the card is grouped together -->
+<div class="container">
+  <div class="row">
+   <div class="col-md-6 card card-body flex-md-row">
+     <div class="col-md-6">
+      <strong> <p>Volunteer Experience</p> </strong>
+      <h3>Hindi Teacher Assistant</h3>
+      <h4>September 2017 - Present</h4>
+      <p>As a hindi teacher assistant, I mostly help with correcting and grading homework as well as individually helping students who need more time one-on-one to understand a skill or concept.</p>
+      <a href="Kadam_Resume.html" class="cul">Continue Reading...</a>
+     </div>
+  
+       <!-- The class card-image-right will also help to make the image stay on the right side of the cell-->
+       
+      <img src="Images/logo.png" alt="Picture of Me" 
+      class="card-image-right flex-md-row col-md-5" width="200" height="250">
+      
+    </div> 
+   
+
+   <div class="col-md-6 card card-body flex-md-row">
+     <div class="col-md-6">
+     <strong> <p>Projects</p> </strong>
+      <h3>M.I.T App Inventor Project</h3>
+      <h4>CSP</h4>
+      <p>Using the software M.I.T App Inventor, my partner and I added features to the existing game Mini Golf to ideally improve and potentially debug the application. </p>
+      <a href="Kadam_Projects.html" class="cul">Continue Reading...</a>
+     </div>
+      
+      <img src="Images/logo2.png" alt="Picture of Me" class="card-image-right flex-md-row col-md-5 " width="200px" height="250px">
+      
+   </div>
+  </div>
+</div>
+ 
+<!--another jumbotron is used for the footer to span it across the width of the container. The class row is used to ensure that the content does not go to the next line. the footer tag is a more descriptive tag to indicate what the code is about-->
+ <div>
+   <footer class="jumbotron row">
+     <!--using the class col-2, the boostrap grid is being utilized to create a section that has a width of two columns for the image-->
+    <div class="col-2">
+      <!--I used an anchor tag with the class mailto: to get users to easily be able to email me-->
+      <a href="mailto:kadam.pr22@gmail.com">
+      <img src="Images/mail.png" width="130px" height="150px">
+      </a>
+      </div>
+      <!--the class col-9 is used to hold the other two images (mostly used for equal spacing)-->
+    <div class="col-9">
+      <a href="https://www.instagram.com/">
+        <img src="Images/ista.png" width="110px" height="115px" alt="instagram icon">
+        </a>
+      <!--the class float-right will move the content to the right side of the column-->
+      <img class="float-right" src="Images/DHS2.png">
+    </div>
+     <!--an empty column was used to ensure that spacing would not be an issue for the footer-->
+    <div class="col-1">
+    </div>
+   </footer>
+ </div> 
+ 
+
+</html>

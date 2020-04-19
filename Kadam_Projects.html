@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link href="Bootstrap_4.3.1/js/css/bootstrap.css" type="text/css" rel="stylesheet">
+  </head>
+
+<!--This is a div that contains that navigation code The class container is used to group together all the content that is shown on a page-->
+<!-- I used getbootstrap.com as a reference-->
+<div class="container main">
+  <!-- The class nav is used to establish to the computer that we are creating a navigation bar. This will let the computer know that all the child content inside the <nav></nav> tags are part of the navigation bar-->
+  
+  <!--The nav pills class is used to create tabs for the navigation that are stylized to appear as if they are boxes that are lined up next to each other, rather than the traditional tabs that may be seen on other websites-->
+
+  <!--the class nav-fill is used to horizontally fill up the width of the container. However, the different content inside the navgation bar is all not the same width as each other. Instead, we see the Home portion of the content having a smaller width than the About Me page -->
+
+   <nav class="nav nav-pills nav-fill">
+     <!--The class nav-item establishes each anchor tag will be a separate tab or pill on the navigation bar-->
+
+     <!--the nav-link class establishes that each tab on the navigational bar will be a link that will redirect the user to another internal page. This paired with  the anchor tag will allow the users to access the different pages of the website-->
+
+     <!--the active class illustartes which tab/webpage the user is currently. It just highlights the tab with a blue color to indcate that-->
+     <a class=" nav-item nav-link" href = "index.html">Home</a>
+     <a class="nav-link nav-item" href = "Kadam_AboutMe.html">About me</a>
+     <a class="nav-link nav-item active" href = "Kadam_Projects.html">Projects</a>
+     <a class="nav-link nav-item" href = "Kadam_Resume.html">Resume</a>
+     <a class="nav-link nav-item" href = "Kadam_ContactMe.html">Contact Me</a>
+    </nav>
+ </div>
+
+<div class="jumbotron">
+  <h1 class="text-center color">Projects</h1>
+</div>
+
+<div class="row">
+   <!--<div class="container"> -->
+     <!--<div class="card card-body">-->
+     <div class="col-sm-5 text-center">
+       <iframe src="https://scratch.mit.edu/projects/325072466/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+     </div>
+   <!--</div> -->
+   <!--<div class="card card-body"> -->
+
+    <div class="card card-body col-sm-4">
+      <h5>Scratch Project</h5>
+      <h6>Scratch</h6>
+      <strong><p>Objective:</p></strong> 
+      <p>Create a game that allows for users to stimulate interation between two sprites in order to fulfill the requirements of the game.</p>
+      <strong><p>Course: N/A</p></strong>
+      <strong><p>Type of Project: Individual Project</p></strong>
+      <em><p>September 3 2019 - September 9 2019</p></em>
+       <p>This game consists of players using the arrow keys to naviagate a truck in order to catch the cake sprites which are falling. If the user drops the cakes 3 times, they will lose and have to start the game again.</p>
+     </div>
+     <!--</div>-->
+   <!--</div>-->
+ </div>
+<br>
+<br>
+ <div class="row">
+   <!--<div class="container"> -->
+     <div class="col-sm-5 text-center">
+       <img src="Images/golflogo.png " width="350" height"350">
+     </div>
+   <!--</div> -->
+   <!--<div class="container"> -->
+    <div class="card cardb-body col-sm-4">
+      <h5>Mini Golf</h5>
+      <h6>M.I.T. App Inventor</h6>
+      <strong><p>Objective:</p></strong>
+      <p>Develop an app derived from an existing app that includes different tiers of features which improve the app in some shape or form</p>
+      <strong><p>Course: Computer Science Principles</p></strong>
+      <strong><p>Type of Project: Group Project</p></strong>
+      <em><p>September 23 2019 - October 8 2019</p></em>
+       <p>Using the software M.I.T App Inventor, my partner and I added features to the existing game Mini Golf to ideally improve and potentially debug the application. We incorporated certain challenges such as the amount of strokes a player got to use per hole. Furthermore, certain incentives such as a winning score was added to further add depth to the game</p>
+     </div>
+<br>
+<br>
+ </div>
+<br>
+<br>
+<div class = "row">
+  <div class = "col-sm-12 text-center"> 
+  <a class = "see_more" see href = 'Kadam_Intermediate_projects.html'>See More Projects</a>
+  </div>
+</div>
+<br>
+<br>
+
+  <div>
+    <!--another jumbotron is used for the footer to span it across the width of the container. The class row is used to ensure that the content does not go to the next line. the footer tag is a more descriptive tag to indicate what the code is about-->
+   <footer class="jumbotron row">
+     <!--using the class col-2, the boostrap grid is being utilized to create a section that has a width of two columns for the image-->
+    <div class="col-2">
+      <!--I used an anchor tag with the class mailto: to get users to easily be able to email me-->
+      <a href="mailto:kadam.pr22@gmail.com">
+      <img src="Images/mail.png" width="130px" height="150px">
+      </a>
+      </div>
+      <!--the class col-9 is used to hold the other two images (mostly used for equal spacing)-->
+    <div class="col-9">
+      <a href="https://www.instagram.com/">
+        <img src="Images/ista.png" width="110px" height="115px" alt="instagram icon">
+        </a>
+      <!--the class float-right will move the content to the right side of the column-->
+      <img class="float-right" src="Images/DHS2.png">
+    </div>
+     <!--an empty column was used to ensure that spacing would not be an issue for the footer-->
+    <div class="col-1">
+    </div>
+   </footer>
+ </div> 
+
+
+
+</html>
